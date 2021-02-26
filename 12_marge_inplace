@@ -24,5 +24,5 @@ class Array_operation:
 a1=(list(map(int, input().split())))
 a2=(list(map(int, input().split())))
 array_operation=Array_operation(a1,a2)
-array_operation.marge()
-print(array_operation.arr1)
+
+print(array_operation.marge())
