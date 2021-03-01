@@ -1,0 +1,28 @@
+import numpy as np
+class Array_operation:
+    def __init__(self, array1, array2):
+        self.arr1=array1
+        self.arr2=array2
+        
+
+    def marge(self):
+        for i in self.arr2:
+            
+            if(i>self.arr1[len(self.arr1)-1]):
+                self.arr1.insert( len(self.arr1),i )
+                
+            else:
+                for j in range(len(self.arr1)):
+                    if(i<=self.arr1[j]):
+                        self.arr1.insert( j,i)
+                        break
+                        
+                        
+        return self.arr1
+                    
+            
+a1=(list(map(int, input().split())))
+a2=(list(map(int, input().split())))
+array_operation=Array_operation(a1,a2)
+
+print(array_operation.marge())
